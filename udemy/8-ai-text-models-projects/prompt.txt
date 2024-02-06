@@ -1,0 +1,12 @@
+Please look up {topic} and provide a summary:
+
+Ask me five interview questions on {topic}. Your goal is to discover any unique opinions, experiences, or insights not covered in the summary:
+
+Based on my answers and the summary, generate an outline for a blog article on {topic}, with 10 very creative title options:
+
+Write one section of the blog article at a time, with a minimum of two paragraphs. Incorporate my feedback before continuing to the next section:
+
+Briefly describe the writing style of Harry Dry from MarketingExamples.com in bullet points:
+
+Rewrite the article in the following style:
+{ style }
