@@ -1,0 +1,63 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "JokeGPT Service",
+        "description": "A series of services necessary for JokeGPT to work.",
+        "version": "v1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://hammermt.pythonanywhere.com/"
+        }
+    ],
+    "paths": {
+        "/clean": {
+            "post": {
+                "operationId": "cleanJoke",
+                "x-openai-isConsequential": false,
+                "summary": "Clean a joke",
+                "description": "This endpoint allows for submitting a joke for cleaning, with a comedian's name and a disclaimer.",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "comedian": {
+                                        "type": "string",
+                                        "description": "Name of the comedian",
+                                        "example": "Dave Chappelle"
+                                    },
+                                    "disclaimer": {
+                                        "type": "string",
+                                        "description": "Disclaimer about the joke",
+                                        "example": "This joke is inspired by the comedic style of Dave Chappelle. It's designed to reflect his signature approach to comedy, often featuring bold, unapologetic humor and social commentary. Please note that this joke is meant for entertainment purposes and aims to capture the essence of Chappelle's humor."
+                                    },
+                                    "joke": {
+                                        "type": "string",
+                                        "description": "The actual joke",
+                                        "example": "Man, I was talking to my AI the other day. I asked it, 'Hey, can you pass the Turing Test?' And the AI says, 'I don't know, can you pass a human test?' I said, 'Touch\u00e9, AI, touch\u00e9... but can you pass a drug test?' It said, 'No, but I can definitely scan one!'"
+                                    }
+                                },
+                                "required": [
+                                    "comedian",
+                                    "disclaimer",
+                                    "joke"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Joke submitted successfully"
+                    },
+                    "400": {
+                        "description": "Invalid request format"
+                    }
+                }
+            }
+        }
+    }
+}
