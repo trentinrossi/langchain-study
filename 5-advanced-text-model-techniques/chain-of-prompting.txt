@@ -1,0 +1,1 @@
+https://learnprompting.org/docs/intermediate/chain_of_thought

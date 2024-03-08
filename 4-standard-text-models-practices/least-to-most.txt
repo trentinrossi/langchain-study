@@ -1,0 +1,3 @@
+1. This is the first prompt --> Create a list of Disney characters
+
+2. This is the second prompt --> For each Disney character, generate a biography and tell me more about the character

@@ -1,0 +1,33 @@
+Summarize the text delimited by triple quotes.
+“””Insert text here“””
+
+In the following scenario, you will be given an abstract of a dissertation 
+and a proposed title for it. 
+
+The name of the thesis should not only inform the reader about its subject 
+matter in a succinct manner but also be engaging. Should the given title 
+fall short of these requirements, kindly offer five different 
+alternatives.
+
+Abstract: Please input abstract
+Title: Please input title
+
+Summarize the text delimited by triple quotes.
+“””My Father is Happy“””
+
+Then compare the generated summary to the text delimited with square 
+brackets []
+
+[My dad is happy]
+
+Provide a final answer of whether the summary and the [] text are similar 
+in meaning.
+
+You will receive two articles (enclosed within HTML div tags) covering the 
+same subject. Initially, summarize the main points presented in each 
+article. Subsequently, determine which of the two presents a more 
+compelling argument and elaborate on your reasoning
+
+<div> insert first article here </div>
+<div> insert second article here </div>
+

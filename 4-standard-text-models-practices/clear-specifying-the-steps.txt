@@ -1,0 +1,7 @@
+Step 1 - The user will hand over a chunk of text enclosed in triple 
+quotes. Your task is to condense this text into a single sentence, 
+starting with the phrase "Summary: ".
+
+Step 2 - Translate the summarization you made in Step 1 into Spanish, 
+leading the translation with the phrase "Translation: "
+

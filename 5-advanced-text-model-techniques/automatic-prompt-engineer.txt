@@ -1,0 +1,4 @@
+ape-zero: https://platform.openai.com/playground/p/oHbuQczDBlRFNOohz3xJHQuf?mode=chat
+ape-lite: 
+ape-paper: mhttps://www.promptingguide.ai/techniques/ape
+prompt-royale: https://github.com/meistrari/prompts-royale

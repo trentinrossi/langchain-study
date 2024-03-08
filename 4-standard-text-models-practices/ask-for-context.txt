@@ -1,0 +1,13 @@
+1. Asking the machine learning model context on a prompt's output:
+
+<output>
+
+Given the above output, generate a prompt that could result in this output.
+
+2. Agent model - Make a decision or ask for more context:
+
+Goals: I'm looking to improve my fitness, health and wealth
+Provide a very detailed, numerical, hierarchical outline for the above goals.
+
+2.1 Could you please provide more context about ways so that you can help me with the above goals?
+I want to provide you with more context about my goals, please provide me with a list of questions that you would like to ask me about my goals:

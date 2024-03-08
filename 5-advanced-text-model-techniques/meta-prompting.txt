@@ -1,0 +1,72 @@
+Example - Create a ChatGPT prompt that would have created the following 
+LinkedIn post: 
+
+For marketers, using AI services can feel like turning on autopilot on a 
+self-driving car.
+
+With the right information, it can be very powerful.
+
+Daniel Gilbert, Brainlabs Global CEO spoke to Richard Tyler at The Times 
+on how AI can make online marketing more accurate.
+
+“You could say to Google’s AI - ‘here’s my website and credit card’… and 
+it will do a pretty poor job. But when the machine has all the 
+information, it can do a great job of pushing to the right customers.”
+
+Our proof?
+
+💡 We tested Google’s Performance Max and achieved an 18% increase in 
+customer conversions, and a 12% fall in cost.
+
+🔗 Read the full article here: http://bit.ly/3Fg7klv
+
+
+----
+
+Create a ChatGPT prompt that would have generated the following code:
+
+# Create a data pipeline of 7 steps from a JSON file to a CSV file, using 
+pandas:
+import pandas as pd
+import json
+import openai
+
+
+openai.api_key = ""
+
+
+# Extract the reviews from a JSON file
+with open("reviews.json") as f:
+   reviews = json.load(f)
+
+
+# Loop over all of the reviews and extract the classification labels using 
+the OpenAI API:
+for review in reviews:
+   # Create the base prompt:
+   base_prompt = "You are responsible for classifying text from TripAvisor 
+for a restaurant.\nThe possible labels are happy or unhappy.\nBelow you'll 
+find an example of the review text and output:\n---\nreviewText: This 
+Mexican restaurant is truly a hidden gem. The flavors in every dish were 
+so authentic and truly transported me to Mexico. I can’t wait to go back 
+for more!\nlabel: happy\n---"
+   response = openai.Completion.create(
+   model="text-davinci-003",
+   prompt=f"""{base_prompt}\nreviewText: 
+{review['reviewText']}\nlabel:""",
+   temperature=0.73,
+   max_tokens=1339,
+   top_p=1,
+   frequency_penalty=0,
+   presence_penalty=0
+   )
+   review["classification"] = response.choices[0].text.strip()
+
+
+# Create a pandas DataFrame from the reviews:
+df = pd.DataFrame(reviews)
+
+
+# Save the DataFrame as a CSV file:
+df.to_csv("reviews.csv", index=False)
+

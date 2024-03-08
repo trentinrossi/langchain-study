@@ -1,0 +1,13 @@
+Lower Quality	Higher Quality
+Can you give me book recommendations?	Can you recommend any recent 
+science fiction novels that explore themes of artificial intelligence and 
+humanity's future?
+What's the best computer?	What's the best computer for video editing 
+tasks in 2023, considering a budget of around $2000?
+Tell me about Shakespeare.	Can you provide an analysis of the 
+thematic elements in William Shakespeare's play "Macbeth", focusing on the 
+role of ambition and power?
+How to make a cake?	What are the steps to baking a classic French 
+Genoise sponge cake, and what common mistakes should I avoid?
+What's the weather?	What's the forecast for Miami, Florida on June 10, 
+2023, specifically focusing on humidity levels and the chance of rain?
